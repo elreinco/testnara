@@ -36,6 +36,7 @@ document.querySelector("#boton2").addEventListener("click",()=>{
 })
 
 
+
 // GUARDAR EN EL LOCAL STORAGE
 var edad;
 var caida;
@@ -58,10 +59,13 @@ function redirect(){
 
 
 document.querySelector("#boton3").addEventListener("click",()=>{
+	ocultar(3);
 	obtener();
 	guardar();
-	//redirect();
+	document.querySelector("#enviar").style.display="block";
 })
+
+
 
 
 

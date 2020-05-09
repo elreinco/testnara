@@ -17,23 +17,23 @@
 	</div>
 	
 	<div id ="seccion">
-		<form action="" id="formulario">
+		<form action="enviar.php" id="formulario" method="post">
 
 		<button class="botoni" onclick="return false">Realizar test</button>
 
-		<label id = "label1" >¿Cuanto años tienes?</label>
-		<input id ="input1"type="text" >
+		<label id = "label1">¿Cuanto años tienes?</label>
+		<input id ="input1" class = "input" type="number" name="edad">
 		<button class = "boton" id="boton1" onclick="return false">Siguiente</button>
 
 		<label id="label2">¿Presentas caida de cabello?</label>
-		<input id="input2" type="text">
+		<input id="input2" class = "input" type="text" name="caida">
 		<button id="boton2" class = "boton" onclick="return false">Siguiente</button>
 
-		<label id="label3" for="">¿Cuál es tu nombre?</label>
-		<input id="input3" type="text">
+		<label id="label3" for="">Email</label>
+		<input id="input3" class = "input" type="email" name="correo" required>
 		<button id="boton3" class = "boton" onclick="return false">Siguiente</button>
 
-		<input id ="enviar "type="submit" onclick="return false" value="Enviar resultados">
+		<input id ="enviar"  type="submit" value="Enviar resultados">
 		</form>
 	</div>
 
